@@ -3,7 +3,20 @@
 /* My overrides for the presentation itself */
 .reveal blockquote
 {
+  background: rgba(30,30,30,0.5);
   padding: 1em;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+.image-float
+{
+  float: left;
+}
+
+.reveal .content-aside
+{
+  margin-top: 1em;
 }
 
 .reveal .backgrounds 
@@ -22,6 +35,11 @@
   border-radius: 10px;
   margin: 5px;
   padding: 2em;
+}
+
+.reveal .highlight
+{
+  color: #ff0;
 }
 
 /* Overrides for the reveal.js-menu plugin */

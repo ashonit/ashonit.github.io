@@ -8,7 +8,7 @@
     <meta name="description"
       content="A guide to speccing, sourcing and building your own computer">
     <meta name="author" content="Ashley Arnold">
-    <meta name="version" content="0.2">
+    <meta name="version" content="0.3">
     <meta name="licence" content="GPLv3">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -146,9 +146,9 @@
         <section id="session1-balancing">
           <h2>Balancing Needs</h2>
 
-          <p>Usually we have to make trade-offs on meeting needs versus limitations.</p>
-          <p>Budget usually constrains performance, portability and space aspects.</p>
-          <p>Often all of these clash.</p>
+          <p>Usually we have to make trade-offs on meeting needs versus limitations</p>
+          <p>Budget usually constrains performance, portability and space aspects</p>
+          <p>Often all of these clash</p>
 
           <table>
             <thead>
@@ -174,7 +174,7 @@
         <section id="session1-portability">
           <h2>Portability vs Performance/Upgrade</h2>
 
-          <p>Is a desktop computer what you need? If portability is imperative, it may not be.</p>
+          <p>Is a desktop computer what you need? If portability is imperative, it may not be</p>
 
           <table>
             <thead>
@@ -255,192 +255,205 @@
           <section id="session1-component-cpu">
             <h2>Central Processing Unit (CPU)</h2>
 
-            <p class="fragment current-visible" style="position:absolute; left:0%; top:10%;"><a href="images/cpu.jpg"><img src="images/cpu.jpg" width="75%"/></a></p>
-            <p class="fragment">The "brain" of the computer, processes software instructions.</p>
+            <div class="image-float">
+              <a href="images/cpu.jpg"><img src="images/cpu.jpg" height="700vh"/></a>
+            </div>
+            <div class="content-aside">
+              <p class="fragment">The "brain" of the computer, processes software instructions</p>
+              <p class="fragment">Improvements in raw CPU performance has plateaued &mdash;<br/>Focus is on multiple cores</p>
+              <p class="fragment">Two primary brands today: Intel and AMD</p>
+              <p class="fragment">Intel are faster (clock for clock) and more efficient. AMD are cheaper</p>
+              <p class="fragment">Intel have names like: Celeron, Pentium, i3, i5, i7</p>
+              <p class="fragment">AMD have two CPU lines: the FX series and the APU series</p>
+              <p class="fragment">CPU "clock speed" and what it means</p>
+              <p class="fragment">CPUs types have physically different shapes &mdash;<br/>Require compatible motherboard</p>
+            </div>
 
-            <p class="fragment">Improvements in raw CPU performance has plateaued. Focus is on multiple cores.</p>
+            <aside class="notes">
+              <p>The primary feature advertised is usually "clock" speed, a number with GHz after it</p>
+              <p>This doesn't allow comparison of performance across brands or even within brands</p>
+              <p>The clock speed is dependent on the architecture as well</p>
+            </aside>
 
-            <p class="fragment">Two primary brands today: Intel and AMD.</p>
-
-            <p class="fragment">Intel are faster (clock for clock) and more efficient. AMD are cheaper.</p>
-
-            <p class="fragment">Intel have names like: Celeron, Pentium, i3, i5, i7.</p>
-            
-            <p class="fragment">AMD have two CPU lines: the FX series and the APU series.</p>
-
-            <p class="fragment">The primary feature advertised is usually "clock" speed, a number with GHz after it.<br/>
-            This doesn't allow comparison of performance across brands or even within brands.<br/>
-            The clock speed is dependent on the architecture as well.</p>
-
-            <p class="fragment">Each CPU type is physically different shape and requires a compatible motherboard.</p>
           </section>
 
           <section id="session1-component-motherboard">
             <h2>Motherboard</h2>
-            <p class="fragment current-visible" style="position:absolute; left:0%; top:12%;"><a href="images/motherboard.jpg"><img src="images/motherboard.jpg" width="70%"/></a></p>
 
-            <p class="fragment">The internal skeleton of the computer.</p>
+            <div class="image-float">
+              <a href="images/motherboard.jpg"><img src="images/motherboard.jpg" height="700vh"/></a>
+            </div>
 
-            <p class="fragment">Connect up the internal parts and offer input/output ports to the user.</p>
-
-            <p class="fragment">Must be paired with a CPU that matches the socket.</p>
-
-            <p class="fragment">Socket 1150 motherboards are for current Intel CPUs.</p>
-
-            <p class="fragment">AMD motherboards are either AM3+ (for the "FX" series) or FM2+ (for the "APU" series).</p>
-
-            <p class="fragment">Various brands available, such as Asus, Gigabyte, Asrock, MSI</p>
+            <div class="content-aside">
+              <p class="fragment">The internal skeleton of the computer</p>
+              <p class="fragment">Connects internal parts and provides input/output ports</p>
+              <p class="fragment">Must be paired with a CPU that matches the socket</p>
+              <p class="fragment">Socket 1151 motherboards are for current Intel CPUs</p>
+              <p class="fragment">AMD motherboards are AM3+ ("FX" series) or FM2+ ("APU" series)</p>
+              <p class="fragment">Various brands available, such as Asus, Gigabyte, Asrock, MSI</p>
+            </div>
           </section>
 
           <section id="session1-component-ram">
             <h2>Random Access Memory (RAM)</h2>
-            <p class="fragment current-visible" style="position:absolute; left:0%; top:12%;"><a href="images/ram.jpg"><img src="images/ram.jpg" width="75%"/></a></p>
 
-            <p class="fragment">RAM is the working or runtime memory for the computer</p>
+            <div class="image-float">
+              <a href="images/ram.jpg"><img src="images/ram.jpg" height="700vh"/></a>
+            </div>
 
-            <p class="fragment">Much faster than a hard drive, but slower than the memory inside the CPU</p>
-
-            <p class="fragment">Many CPUs/motherboards support DDR3 RAM; recent releases support DDR4<br>
-            You have to get the right type: DDR3 and DDR4 are physically incompatible</p>
-
-            <p class="fragment">Most motherboards support "dual channel" mode when with two sticks</p>
-
-            <p class="fragment">Comes in various sizes (2GB, 4GB, 8GB) and<br/>speeds (specified in MHz, 1333, 1600, 1866, 2133, 2400)</p>
-
-            <p class="fragment">Other main spec is the timings, designated with a "CL" number &mdash; the lower the better</p>
-
+            <div class="content-aside">
+              <p class="fragment">RAM is the working or runtime memory for the computer</p>
+              <p class="fragment">Much faster than a hard drive, but slower than memory inside a CPU</p>
+              <p class="fragment">Many CPUs/motherboards support DDR3 RAM;<br/>recent releases support DDR4<br>
+              <p class="fragment">You have to get the right type:<br/>DDR3 and DDR4 are physically incompatible</p>
+              <p class="fragment">Most current motherboards support "dual channel" mode</p>
+              <p class="fragment">Comes in various sizes (2GB, 4GB, 8GB) and<br/>speeds (specified in MHz, 1333, 1600, 1866, 2133, 2400)</p>
+              <p class="fragment">Other main spec is the timings, designated with a "CL" number &mdash;<br/>the lower the better</p>
+            </div>
           </section>
 
           <section id="session1-component-hdd">
             <h2>Hard Disk Drive (HDD)</h2>
-            <p class="fragment current-visible" style="position:absolute; left:0%; top:10%;"><a href="images/hdd.jpg"><img src="images/hdd.jpg" width="75%"/></a></p>
 
-            <p class="fragment">Currently the most common mass storage device</p>
+            <div class="image-float">
+              <a href="images/hdd.jpg"><img src="images/hdd.jpg" height="700vh"/></a>
+            </div>
 
-            <p class="fragment">Stores data after the power is turned off (unlike RAM, which requires power)</p>
-
-            <p class="fragment">Comes in various sizes usually in terrabytes (TB)</p>
-
-            <p class="fragment">Have different speeds that broadly define performance &mdash;<br/>5400 and 7200RPM are the most common</p>
-
-            <p class="fragment">HDDs use standard SATA connectors, and require a data cable from the motherboard, and a power cable from the power supply</p>
-
-            <p class="fragment">Internally, HDDs physically spin so a "head" can read data from platters</p>
+            <div class="content-aside">
+              <p class="fragment">Currently the most common mass storage device</p>
+              <p class="fragment">Stores data after the power is turned off<br/>(unlike RAM, which requires power)</p>
+              <p class="fragment">Comes in various sizes usually in terrabytes (TB)</p>
+              <p class="fragment">Have different speeds that broadly define performance &mdash;<br/>5400 and 7200RPM are the most common</p>
+              <p class="fragment">HDDs use standard SATA connectors, and require a data cable from the motherboard, and a power cable from the power supply</p>
+              <p class="fragment">HDDs physically spin so a "head" can read data from platters</p>
+            </div>
 
           </section>
 
           <section id="session1-component-ssd">
             <h2>Solid State Drive (SSD)</h2>
-            <p class="fragment current-visible" style="position:absolute; left:0%; top:12%;"><a href="images/ssd.jpg"><img src="images/ssd.jpg" width="75%"/></a></p>
 
-            <p class="fragment">Like HDDs, store data after power is turned off</p>
+            <div class="image-float">
+              <a href="images/ssd.jpg"><img src="images/ssd.jpg" height="700vh"/></a>
+            </div>
 
-            <p class="fragment">Unlike HDDs, have no moving parts &mdash;<br/>
-            Use less power and are quieter and more resilient physically</p>
-
-            <p class="fragment">Also much faster than hard drives, and are great to install your operating system and applications to as everything loads much faster</p>
-
-            <p class="fragment">Cost more in dollars per gigabyte</p>
-
-            <p class="fragment">Initial reliability issues have mostly been solved, and they are now very reliable</p>
+            <div class="content-aside">
+              <p class="fragment">Like HDDs, store data after power is turned off</p>
+              <p class="fragment">Unlike HDDs, have no moving parts &mdash;<br/>
+              Use less power and are quieter and more resilient physically</p>
+              <p class="fragment">Also much faster than hard drives, and are great to install your operating system and applications to as everything loads much faster</p>
+              <p class="fragment">Cost more in dollars per gigabyte</p>
+              <p class="fragment">Initial reliability issues have mostly been solved,<br/>and they are now very reliable</p>
+            </div>
 
           </section>
 
           <section id="session1-component-psu">
             <h2>Power Supply Unit (PSU)</h2>
-            <p class="fragment current-visible" style="position:absolute; left:0%; top:15%;"><a href="images/psu.jpg"><img src="images/psu.jpg" width="75%"/></a></p>
 
-            <p class="fragment">Provides power to all other components inside the computer</p>
+            <div class="image-float">
+              <a href="images/psu.jpg"><img src="images/psu.jpg" height="700vh"/></a>
+            </div>
 
-            <p class="fragment">Often called the "heart" of the computer</p>
-
-            <p class="fragment">Quality is important in power supplies, <a href="https://www.youtube.com/watch?v=q41GjPgm9d8">bad things can happen with low-quality units</a></p>
-
-            <p class="fragment">How much power do I need?</p>
-
-            <p class="fragment">How to determine quality of a power supply<p>
+            <div class="content-aside">
+              <p class="fragment">Provides power to all other components inside the computer</p>
+              <p class="fragment">Often called the "heart" of the computer</p>
+              <p class="fragment">Quality is important in power supplies &mdash;<br/><a href="https://www.youtube.com/watch?v=q41GjPgm9d8">bad things can happen with low-quality units</a></p>
+              <p class="fragment">How much power do I need?</p>
+              <p class="fragment">How to determine quality of a power supply<p>
+            </div>
           </section>
 
           <section id="session1-component-gpu">
             <h2>Graphics Processing Unit (GPU)</h2>
-            <p class="fragment current-visible" style="position:absolute; left:0%; top:12%;"><a href="images/gpu.jpg"><img src="images/gpu.jpg" width="75%"/></a></p>
 
-            <p class="fragment">A GPU is a dedicated processor for video output</p>
+            <div class="image-float">
+              <a href="images/gpu.jpg"><img src="images/gpu.jpg" height="700vh"/></a>
+            </div>
 
-            <p class="fragment">Can be a separate card, or built into a CPU (for example, Intel Core series or AMD APUs)</p>
-
-            <p class="fragment">With onboard graphics, ports are built into the motherboard.<br/>
-            A dedicated GPU has its own ports</p>
-
-            <p class="fragment">Commonly for high-end gaming graphics, but can benefit other software such as Photoshop</p>
-
-            <p class="fragment">Usually the highest power component; tends to determine PSU requirements</p>
-
-            <p class="fragment">Go out of date much faster than CPUs</p>
+            <div class="content-aside">
+              <p class="fragment">A GPU is a dedicated processor for video output</p>
+              <p class="fragment">Can be a separate card, or built into a CPU<br/>(for example, Intel Core series or AMD APUs)</p>
+              <p class="fragment">With onboard graphics, ports are built into the motherboard.<br/>
+              A dedicated GPU has its own ports</p>
+              <p class="fragment">Commonly for high-end gaming graphics, but can benefit other software such as Photoshop</p>
+              <p class="fragment">Usually the highest power component;<br/>tends to determine PSU requirements</p>
+              <p class="fragment">Go out of date much faster than CPUs</p>
+            </div>
           </section>
 
           <section id="session1-component-case">
             <h2>Case</h2>
-            <p class="fragment current-visible" style="position:absolute; left:0%; top:15%;"><a href="images/case.jpg"><img src="images/case.jpg" width="40%"/></a></p>
 
-            <p class="fragment">Determines the appearance of the machine and provides external skeleton</p>
+            <div class="image-float">
+              <a href="images/case.jpg"><img src="images/case.jpg" height="900vh"/></a>
+            </div>
 
-            <p class="fragment">Come in various shapes, sizes, colours. Much of the decision is about looks</p>
-
-            <p class="fragment">Form factors: ATX (tower), Micro-ATX (mid-tower/compact), Mini-ITX (small form factor), DTX</p>
-
-            <p class="fragment">Usually come with fans for cooling (some cheaper cases have one or zero)</p>
-            
-            <p class="fragment">Screws and other odds and ends are also included (usually)</p>
-
-            <p class="fragment">Can provide convenience ports on the front</p>
-
-            <p class="fragment">Other than cooling, provides no performance benefit to the computer</p>
+            <div class="content-aside">
+              <p class="fragment">Determines the appearance of the machine and provides external skeleton</p>
+              <p class="fragment">Come in various shapes, sizes, colours. Much of the decision is about looks</p>
+              <p class="fragment">Form factors:</p>
+              <ul class="fragment">
+                <li>ATX (tower)</li>
+                <li>Micro-ATX (mid-tower/compact)</li>
+                <li>Mini-ITX (small form factor)</li>
+                <li>DTX</li>
+              </ul>
+              <p class="fragment">Usually come with fans for cooling (some cheaper cases have one or zero)</p>
+              <p class="fragment">Screws and other odds and ends are also included (usually)</p>
+              <p class="fragment">Can provide convenience ports on the front</p>
+              <p class="fragment">Other than cooling, provides no performance benefit to the computer</p>
+            </div>
 
           </section>
 
           <section id="session1-component-cooling">
             <h2>Cooling</h2>
-            <p class="fragment current-visible" style="position:absolute; left:0%; top:20%;"><a href="images/cooling.jpg"><img src="images/cooling.jpg" width="70%"/></a></p>
 
-            <p class="fragment">Every component needs appropriate cooling</p>
+            <div class="image-float">
+              <a href="images/cooling.jpg"><img src="images/cooling.jpg" height="700vh"/></a>
+            </div>
 
-            <p class="fragment">Generally motherboards, HDDs, GPUs and RAM need no additional cooling</p>
-
-            <p class="fragment">CPUs come with a "stock" cooler, but you can augment with an "after market" cooler</p>
-
-            <p class="fragment">Cases come with stock fans, but usually have slots for other fans</p>
+            <div class="content-aside">
+              <p class="fragment">Every component needs appropriate cooling</p>
+              <p class="fragment">Generally motherboards, HDDs, GPUs and RAM<br/>need no additional cooling</p>
+              <p class="fragment">CPUs usually come with a "stock" cooler</p>
+              <p class="fragment">You can get better performance with an "after market" cooler</p>
+              <p class="fragment">Cases come with stock fans, but usually have slots for other fans</p>
+            </div>
             
           </section>
 
           <section id="session1-component-wireless">
             <h2>Wireless</h2>
-            <p class="fragment current-visible" style="position:absolute; left:0%; top:15%;"><a href="images/wireless.jpg"><img src="images/wireless.jpg" width="70%"/></a></p>
 
-            <p class="fragment">While laptops usually have wireless built-in, most desktops don't</p>
+            <div class="image-float">
+              <a href="images/wireless.jpg"><img src="images/wireless.jpg" height="700vh"/></a>
+            </div>
 
-            <p class="fragment">Some motherboards (usually small ITX ones) can have a wireless adapter built-in</p>
-
-            <p class="fragment">Adapters come as small cards (PCIe, PCI) or as USB</p>
-
-            <p class="fragment">Any adapter might be good enough, but depends on distance from router<br/>
-            and other conditions like walls or obstacles</p>
+            <div class="content-aside">
+              <p class="fragment">While laptops usually have wireless built-in, most desktops don't</p>
+              <p class="fragment">Some motherboards (usually small ITX ones)<br/>can have a wireless adapter built-in</p>
+              <p class="fragment">Adapters come as small cards (PCIe, PCI) or as USB</p>
+              <p class="fragment">Any adapter might be good enough, but depends on<br/>distance from router and other conditions like walls or obstacles</p>
+            </div>
 
           </section>
 
           <section id="session1-component-peripherals">
             <h2>Peripherals (keyboard, mouse, monitor...)</h2>
-            <p class="fragment current-visible" style="position:absolute; left:0%; top:15%;"><a href="images/peripherals.jpg"><img src="images/peripherals.jpg" width="75%"/></a></p>
 
-            <p class="fragment">Cabled or wireless options for keyboard and mouse, USB vs PS/2</p>
+            <div class="image-float">
+              <a href="images/peripherals.jpg"><img src="images/peripherals.jpg" height="700vh"/></a>
+            </div>
 
-            <p class="fragment">Mechanical keyboards for enthusiast level</p>
-
-            <p class="fragment">Monitor panel types (TN, IPS/PLS, VA)</p>
-
-            <p class="fragment">Resolution, refresh rates, and input lag</p>
-
-            <p class="fragment">Speakers vs headphones</p>
+            <div class="content-aside">
+              <p class="fragment">Cabled or wireless options for keyboard and mouse, USB vs PS/2</p>
+              <p class="fragment">Mechanical keyboards for enthusiast level</p>
+              <p class="fragment">Monitor panel types (TN, IPS/PLS, VA)</p>
+              <p class="fragment">Resolution, refresh rates, and input lag</p>
+              <p class="fragment">Speakers vs headphones</p>
+            </div>
 
           </section>
 
@@ -474,7 +487,7 @@
           <h2>Recap of Session 1</h2>
 
           <p><a href="#/session1-components">Components</a>: CPU, RAM, HDD, SSD, PSU, GPU...</p>
-          <p class="fragment">Hopefully the answer to "what kind of computer should I get?" is clear.</p>
+          <p class="fragment">Hopefully the answer to "what kind of computer should I get?" is clear</p>
 
         </section>
 
@@ -513,7 +526,7 @@
         <section id="session2-buildtheory">
           <h2>Build "Theory"</h2>
 
-          <p>Relative allocation of budget to various parts.</p>
+          <p>Relative allocation of budget to various parts</p>
 
           <p>With approximately 1K budget, for a gaming computer, rule-of-thumb proportions:</p>
           <table>
@@ -535,7 +548,7 @@
           <h2>Compatibility Checklist Table (part 1)</h2>
 
           <p>When putting together a list of parts, there are a number of things you need
-          to check to ensure compatibility. The next three slides are a brief summary to help.</p>
+          to check to ensure compatibility. The next three slides are a brief summary to help</p>
 
           <p>Compatibility checklist table (part 1):</p>
 
@@ -615,18 +628,23 @@
         <section id="session2-powerrefinements">
           <h2>Refining Power Estimates</h2>
 
-          <ul>
-            <li class="fragment">Look at power consumption results for the parts on review sites</li>
-            <li class="fragment">Consider current parts but also possible upgrades in future</li>
-            <li class="fragment">Accounting for aging</li>
-            <li class="fragment">Add up the TDP, then add 20-25% for headroom</li>
-            <li class="fragment">Rule of thumb: single GPU =&gt; 500-600W; dual GPU =&gt; 750-850W</li>
-          </ul>
+          <div class="image-float">
+            <a href="images/psu-label.jpg"><img src="images/psu-label.jpg" height="700vh"/></a>
+          </div>
 
-          <p class="fragment">Beware cheap power supplies. Look at reviews that load them up to test them.</p>
-          <p class="fragment">Understand "continuous" vs "peak" specifications.</p>
-          <p class="fragment">Weigh the 12V rail specifications over the 5V/3.3V.</p>
-          <p class="fragment current-visible" style="position:absolute; left:10%; top:15%;"><a href="images/psu-label.jpg"><img src="images/psu-label.jpg" width="95%"/></a></p>
+          <div class="content-aside">
+            <ul>
+              <li class="fragment">Look at power consumption results for the parts on review sites</li>
+              <li class="fragment">Consider current parts but also possible upgrades in future</li>
+              <li class="fragment">Accounting for ageing</li>
+              <li class="fragment">Add up the TDP, then add 20-25% for headroom</li>
+              <li class="fragment">Rule of thumb: single GPU =&gt; 500-600W; dual GPU =&gt; 750-850W</li>
+            </ul>
+  
+            <p class="fragment">Beware cheap power supplies &mdash;<br/>Look at reviews that load them up to test them</p>
+            <p class="fragment">Understand "continuous" vs "peak" specifications</p>
+            <p class="fragment">Weigh the 12V rail specifications over the 5V/3.3V</p>
+          </div>
         </section>
 
         <section id="session2-parts-list">
@@ -634,7 +652,7 @@
 
           <ul>
             <li>If possible, start with the store you're planning to buy from</li>
-            <li>This cuts down the possibilities to parts that are in-stock.</li>
+            <li>This cuts down the possibilities to parts that are in-stock</li>
             <li>Can use a site like <a href="http://pcpartpicker.com/">PC Part Picker</a> (with proviso)</li>
             <li>Recommend finding a <a href="#/appendix-guides">good computer forum</a>
             with a "building" section</li>
@@ -687,16 +705,16 @@
           <h2>Example Parts List (Modified)</h2>
 
           <ul>
-            <li>CPU: <span class="fragment strike" data-fragment-index="1">AMD FX-8320 ($220)</span> <span class="fragment" data-fragment-index="1" style="color: yellow;"><b>A8 7650K</b></span></li>
-            <li>Motherboard: <span class="fragment strike" data-fragment-index="1">ASUS M5A97 R2.0 ($140)</span> <span class="fragment" data-fragment-index="1" style="color: yellow;"><b>MSI A78M-E35</b></span></li>
+            <li>CPU: <span class="fragment strike" data-fragment-index="1">AMD FX-8320 ($220)</span> <span class="fragment highlight" data-fragment-index="1"><b>A8 7650K</b></span></li>
+            <li>Motherboard: <span class="fragment strike" data-fragment-index="1">ASUS M5A97 R2.0 ($140)</span> <span class="fragment highlight" data-fragment-index="1"><b>MSI A78M-E35</b></span></li>
             <li>Cooler: <span class="fragment strike" data-fragment-index="2">Coolermaster Hyper 212X ($50)</span></li>
             <li>RAM: <b>G-Skill Ares 2x4GB</b> ($80)</li>
             <li>SSD: <b>Crucial BX-100 250GB</b> ($130)</li>
             <li>HDD: <span class="fragment strike" data-fragment-index="3">WD Blue 1TB ($70)</span></li>
             <li>ODD: <span class="fragment strike" data-fragment-index="3">LiteOn DVD-RW ($20)</span></li>
             <li>GPU: <span class="fragment strike" data-fragment-index="4">MSI R9 380 4GB ($300)</span></li>
-            <li>Case: <span class="fragment strike" data-fragment-index="5">Fractal Design Core 2500 ($80)</span> <span class="fragment" data-fragment-index="5" style="color: yellow;"><b>Deepcool Tesseract</b></span></li>
-            <li>PSU:  <span class="fragment strike" data-fragment-index="6">FAntec HCG-520M ($100)</span> <span class="fragment" data-fragment-index="6" style="color: yellow;"><b>EVGA 80+ 430W</b></span></li>
+            <li>Case: <span class="fragment strike" data-fragment-index="5">Fractal Design Core 2500 ($80)</span> <span class="fragment highlight" data-fragment-index="5"><b>Deepcool Tesseract</b></span></li>
+            <li>PSU:  <span class="fragment strike" data-fragment-index="6">FAntec HCG-520M ($100)</span> <span class="fragment highlight" data-fragment-index="6"><b>EVGA 80+ 430W</b></span></li>
             <li>Wifi:  <span class="fragment strike" data-fragment-index="7">D-Link DWA-548 ($20)</span></li>
           </ul>
           <p class="fragment" data-fragment-index="8">Reduces total cost from about $1200 to about $550</p>
@@ -815,109 +833,126 @@
         <section id="session3-build-prep-case">
           <h2>Step 1a: Prep the Case</h2>
 
-          <p>Open up the case, ensure screws and other parts are included</p>
-          <p>Take out the power supply and insert in the appropriate place</p>
-          <p>Most cases have the power supply slot at the bottom of the case</p>
-          <p>Standard is to put the PSU fan down (whether at the bottom or the top of the case)</p>
-          <p>The power supply will come with four screws to secure it to the case</p>
-        </section>
+          <div class="image-float">
+            <a href="images/build-psu-in-case.jpg"><img src="images/build-psu-in-case.jpg" height="900vh"/></a>
+          </div>
 
-        <section id="session3-case-example-image">
-          <h2>Step 1a: Example Case Setup</h2>
-          <p style="position:absolute; left:0%; top:65%;"><a href="images/build-psu-in-case.jpg"><img src="images/build-psu-in-case.jpg" width="40%"/></a></p>
+          <div class="content-aside">
+            <p class="fragment">Open up the case, ensure screws and other parts are included</p>
+            <p class="fragment">Take out the power supply and insert in the appropriate place</p>
+            <p class="fragment">Most cases have the power supply slot at the bottom of the case</p>
+            <p class="fragment">Standard is to put the PSU fan down (whether at the bottom or the top of the case)</p>
+            <p class="fragment">The power supply will come with four screws to secure it to the case</p>
+          </div>
         </section>
 
         <section id="session3-build-prep-case-2">
           <h2>Step 1b: Prep Motherboard I/O Shield</h2>
 
-          <p>In the motherboard box there will be a silver "I/O Shield"</p>
-          <p class="fragment current-visible" style="position:absolute; left:0%; top:15%;"><a href="images/build-shield-1.jpg"><img src="images/build-shield-1.jpg" width="75%"/></a></p>
-          <p class="fragment">This needs to be placed at the back of the case</p>
-          <p class="fragment">Later when installing the motherboard,<br/>it will guide the back I/O panel placement</p>
-          <p class="fragment">The size is standardised &mdash;<br/>all cases will support any
-            motherboard's shield</p>
-          <p class="fragment current-visible" style="position:absolute; left:0%; top:15%;"><a href="images/build-shield-2.jpg"><img src="images/build-shield-2.jpg" width="75%"/></a></p>
+          <div class="image-float">
+            <a href="images/build-shield-1.jpg"><img src="images/build-shield-1.jpg" height="700vh"/></a>
+            <p class="fragment" data-fragment-index="4" style="position:absolute; left:1vw; top:11vh;"><a href="images/build-shield-2.jpg"><img src="images/build-shield-2.jpg" height="700vh"/></a></p>
+          </div>
+
+          <div class="content-aside">
+            <p>In the motherboard box there will be a silver "I/O Shield"</p>
+            <p class="fragment" data-fragment-index="1">This needs to be placed at the back of the case</p>
+            <p class="fragment" data-fragment-index="2">Later when installing the motherboard,<br/>it will guide the back I/O panel placement</p>
+            <p class="fragment" data-fragment-index="3">The size is standardised &mdash;<br/>all cases will support any
+              motherboard's shield</p>
+          </div>
         </section>
 
         <section id="session3-build-prep-case-3">
           <h2>Step 1c: Prep Motherboard Risers in Case</h2>
 
-          <p class="fragment">Motherboard risers are small screws that elevate the motherboard</p>
-          <p class="fragment current-visible" style="position:absolute; left:0%; top:15%;"><a href="images/build-standoffs.jpg"><img src="images/build-standoffs.jpg" width="75%"/></a></p>
-          <p class="fragment">It's crucial that they're installed &mdash; the board will short circuit<br/>if it's
-            touching the motherboard while powered</p>
-          <p class="fragment">Cases usually have labels for the motherboard size (ATX, micro-ATX, etc)<br/>
-          as to where the risers should go</p>
-          <p class="fragment">Or you can just line up with the holes in the board</p>
-          <p class="fragment">Some cases have inbuilt "bubbles" that act as risers; these are rare</p>
-          <p class="fragment current-visible" style="position:absolute; left:0%; top:15%;"><a href="images/build-case-dome-risers.jpg"><img src="images/build-case-dome-risers.jpg" width="75%"/></a></p>
-          <p class="fragment">Some cases come with the some or all the risers pre-installed. Still check they're secure</p>
+          <div class="image-float">
+            <a href="images/build-standoffs.jpg"><img src="images/build-standoffs.jpg" height="700vh"/></a>
+            <p class="fragment" data-fragment-index="6" style="position:absolute; left:1vw; top:11vh;"><a href="images/build-case-dome-risers.jpg"><img src="images/build-case-dome-risers.jpg" height="700vh"/></a></p>
+          </div>
+
+          <div class="content-aside">
+            <p class="fragment" data-fragment-index="1">Motherboard risers are small screws that elevate the motherboard</p>
+            <p class="fragment" data-fragment-index="2">It's crucial that they're installed &mdash; the board will short circuit<br/>if it's
+              touching the motherboard while powered</p>
+            <p class="fragment" data-fragment-index="3">Cases usually have labels for the motherboard size</p>
+            <p class="fragment" data-fragment-index="4">Or you can just line up with the holes in the board</p>
+            <p class="fragment" data-fragment-index="5">Some cases have inbuilt "bubbles" that act as risers; these are rare</p>
+            <p class="fragment" data-fragment-index="7">Some cases come with the some or all the risers pre-installed.<br/>Still check they're secure</p>
+          </div>
 
         </section>
 
         <section id="session3-build-install-cpu">
           <h2>Step 2: Install CPU Into Motherboard</h2>
 
-          <p>CPU alignment</p>
-          <p class="fragment current-visible" style="position:absolute; left:0%; top:15%;"><a href="images/build-cpu-alignment.jpg"><img src="images/build-cpu-alignment.jpg" width="75%"/></a></p>
+          <div class="image-float">
+            <a href="images/build-cpu-alignment.jpg"><img src="images/build-cpu-alignment.jpg" height="700vh"/></a>
+          <p class="fragment" data-fragment-index="2" style="position:absolute; left:1vw; top:11vh;"><a href="images/build-cpu-remove-plastic-tab.jpg"><img src="images/build-cpu-remove-plastic-tab.jpg" height="700vh"/></a></p>
+          <p class="fragment" data-fragment-index="4" style="position:absolute; left:2vw; top:13vh;"><a href="images/build-cpu-install.jpg"><img src="images/build-cpu-install.jpg" height="700vh"/></a></p>
+          </div>
 
-          <p class="fragment">Remove the plastic tab from the CPU socket on the motherboard</p>
-          <p class="fragment current-visible" style="position:absolute; left:0%; top:15%;"><a href="images/build-cpu-remove-plastic-tab.jpg"><img src="images/build-cpu-remove-plastic-tab.jpg" width="75%"/></a></p>
-
-          <p class="fragment">Should drop right into place without any force</p>
-          <p class="fragment current-visible" style="position:absolute; left:0%; top:15%;"><a href="images/build-cpu-install.jpg"><img src="images/build-cpu-install.jpg" width="75%"/></a></p>
-
-          <p class="fragment">The lever to hold the CPU in place can make the board creak</p>
-
-          <p class="fragment">Be careful not to bend any pins!</p>
+          <div class="content-aside">
+            <p>CPU alignment</p>
+            <p class="fragment" data-fragment-index="1">Remove the plastic tab from the CPU socket on the motherboard</p>
+            <p class="fragment" data-fragment-index="3">Should drop right into place without any force</p>
+            <p class="fragment" data-fragment-index="5">The lever to hold the CPU in place can make the board creak</p>
+            <p class="fragment" data-fragment-index="6">Be careful not to bend any pins!</p>
         </section>
 
         <section id="session3-build-install-cooler">
           <h2>Step 3: Install CPU Cooler</h2>
 
-          <p>Without a correctly installed cooler, a CPU will overheat in seconds</p>
+          <div class="image-float">
+            <a href="images/build-cooler-intel-stock.jpg"><img src="images/build-cooler-intel-stock.jpg" height="700vh"/></a>
+            <p class="fragment" data-fragment-index="4" style="position:absolute; left:1vw; top:11vh;"><a href="images/build-cooler-aftermarket.jpg"><img src="images/build-cooler-aftermarket.jpg" height="700vh"/></a></p>
+          </div>
 
-          <p>Various styles of cooler:<br/>Intel stock; AMD stock; after market air; water cooling</p>
-          <p class="fragment current-visible" style="position:absolute; left:0%; top:15%;"><a href="images/build-cooler-intel-stock.jpg"><img src="images/build-cooler-intel-stock.jpg" width="75%"/></a></p>
-
-          <p class="fragment">After market coolers usually have a back plate to support the extra weight</p>
-
-          <p class="fragment">Plug fan into the 4-pin "CPU fan header" on the motherboard</p>
-
-          <p class="fragment">Unless looking at enthusiast level, air coolers<br/>are generally perform just as well</p>
-          <p class="fragment current-visible" style="position:absolute; left:0%; top:15%;"><a href="images/build-cooler-aftermarket.jpg"><img src="images/build-cooler-aftermarket.jpg" width="75%"/></a></p>
+          <div class="content-aside">
+            <p>Without a correctly installed cooler, a CPU will overheat in seconds</p>
+            <p>Various styles of cooler:<br/>Intel stock; AMD stock; after market air; water cooling</p>
+            <p class="fragment" data-fragment-index="1">After market coolers provide better performance</p>
+            <p class="fragment" data-fragment-index="1">Usually have a back plate to support the extra weight</p>
+            <p class="fragment" data-fragment-index="2">Plug fan into the 4-pin "CPU fan header" on the motherboard</p>
+            <p class="fragment" data-fragment-index="3">Unless looking at enthusiast level, air coolers<br/>generally perform just as well</p>
+          </div>
         </section>
 
         <section id="session3-build-install-ram">
           <h2>Step 4: Install RAM</h2>
 
-          <p>Only goes in one way</p>
+          <div class="image-float">
+            <a href="images/build-ram.jpg"><img src="images/build-ram.jpg" height="700vh"/></a>
+          </div>
 
-          <p>Shouldn't need to force, but it can take some pressure to click into place</p>
+          <div class="content-aside">
+            <p>Only goes in one way</p>
+            <p>Shouldn't need to force; can take some pressure to click into place</p>
+            <p>Consult manual for dual-channel slots &mdash; usually match colours</p>
+          </div>
 
-          <p class="fragment current-visible" style="position:absolute; left:0%; top:25%;"><a href="images/build-ram.jpg"><img src="images/build-ram.jpg" width="75%"/></a></p>
-          
         </section>
 
         <section id="session3-build-install-motherboard">
           <h2>Step 5: Install Motherboard Into Case</h2>
 
-          <p>Align the motherboard with I/O shield and risers</p>
+          <div class="image-float">
+            <a href="images/build-motherboard-in-case.jpg"><img src="images/build-motherboard-in-case.jpg" height="700vh"/></a>
+          </div>
 
-          <p>Screw in all holes on the motherboard</p>
+          <div class="content-aside">
+            <p>Align the motherboard with I/O shield and risers</p>
+            <p>Screw in all holes on the motherboard</p>
+            <p>Use the right screw &mdash;<br/>cases often comes with screws that are similar in gauge</p>
+          </div>
 
-          <p>Use the right screw &mdash;<br/>cases often comes with screws that are similar in gauge</p>
-
-          <p class="fragment current-visible" style="position:absolute; left:0%; top:20%;"><a href="images/build-motherboard-in-case.jpg"><img src="images/build-motherboard-in-case.jpg" width="75%"/></a></p>
         </section>
 
         <section id="session3-build-install-fans">
           <h2>Step 6: Plug In Case Fans</h2>
 
           <p>Number of fans depends on the case</p>
-
           <p>Can plug into "headers" on the motherboard, a fan controller, or via PSU molex cables</p>
-
           <p>Avoid the last option since they will run full speed (noisy)</p>
 
         </section>
@@ -926,16 +961,13 @@
           <h2>Step 7: Plug In Power Supply Cables</h2>
 
           <p>Types of connectors in a power supply:</p>
-
           <ul>
             <li>24 pin motherboard</li>
             <li>4+4 pin CPU power (top left of motherboard</li>
             <li>4 pin Molex and SATA (drives and peripherals)</li>
             <li>6+2 pin PCIe (for graphics cards)</li>
           </ul>
-
           <p>Modular vs Semi-modular vs Non-modular</p>
-
           <p>Not everything has a place &mdash; don't plug in the floppy drive connector!</p>
 
         </section>
@@ -944,27 +976,25 @@
           <h2>Step 8: Install Drives</h2>
 
           <p>Types of drives (SSD, HDD, DVD/BR)</p>
-
           <p>Screws vs tool-less installs</p>
-
           <p>SSD slots &mdash; nice, but not imperative</p>
         </section>
 
         <section id="session3-build-install-drive-cables">
           <h2>Step 9: Install Drive Cables</h2>
 
-          <p>Each drive will generally need two cables: data, and power</p>
+          <div class="image-float">
+            <a href="images/build-sata-data.jpg"><img src="images/build-sata-data.jpg" height="700vh"/></a>
+            <p class="fragment" data-fragment-index="2" style="position:absolute; left:1vw; top:11vh;"><a href="images/build-sata-power.jpg"><img src="images/build-sata-power.jpg" height="700vh"/></a></p>
+          </div>
 
-          <p>SATA data comes from the motherboard to the drive</p>
-          <p class="fragment current-visible" style="position:absolute; left:0%; top:15%;"><a href="images/build-sata-data.jpg"><img src="images/build-sata-data.jpg" width="75%"/></a></p>
-
-          <p class="fragment">SATA power comes from the PSU to the drive</p>
-          <p class="fragment current-visible" style="position:absolute; left:0%; top:15%;"><a href="images/build-sata-power.jpg"><img src="images/build-sata-power.jpg" width="75%"/></a></p>
-
-          <p class="fragment">Can use a single power cable to power multiple drives</p>
-
-          <p class="fragment">May need to use a couple of PSU cables depending on drive location</p>
-          <p class="fragment">Try and plug SSDs into SATA 6 Gbps ports on the motherboard</p>
+          <div class="content-aside">
+            <p>Each drive will generally need two cables: data, and power</p>
+            <p>SATA data comes from the motherboard to the drive</p>
+            <p class="fragment" data-fragment-index="1">SATA power comes from the PSU to the drive</p>
+            <p class="fragment" data-fragment-index="3">Can use a single power cable to power multiple drives</p>
+            <p class="fragment" data-fragment-index="4">May need to use a couple of PSU cables depending on drive location</p>
+            <p class="fragment" data-fragment-index="5">Try and plug SSDs into SATA 6 Gbps ports on the motherboard</p>
         </section>
 
         <section id="session3-build-install-case-cables">
@@ -980,29 +1010,44 @@
         <section id="session3-build-install-gpu">
           <h2>Step 11: Install Graphics Card (if needed)</h2>
 
-          <p class="fragment">Graphics cards should go in the main (long) PCIe slot</p>
-          <p class="fragment">Remove the braces from the side of the case</p>
-          <p class="fragment">Clicks into place with a latch</p>
-          <p class="fragment current-visible" style="position:absolute; left:0%; top:20%;"><a href="images/build-gpu.jpg"><img src="images/build-gpu.jpg" width="75%"/></a></p>
+          <div class="image-float">
+           <a href="images/build-gpu.jpg"><img src="images/build-gpu.jpg" height="700vh"/></a>
+          </div>
+
+          <div class="content-aside">
+            <p class="fragment">Graphics cards should go in the main (long) PCIe slot</p>
+            <p class="fragment">Remove the braces from the side of the case</p>
+            <p class="fragment">Clicks into place with a latch</p>
+          </div>
 
         </section>
 
         <section id="session3-build-install-gpu-cables">
           <h2>Step 12: Plug In Graphics Card Cables</h2>
 
-          <p class="fragment">A graphics card may need no extra power,<br/>or a combination of 6/8 pin connectors</p>
-          <p class="fragment">If a port requires 8-pins, plug in an 8-pin connector!</p>
-          <p class="fragment">Modular power supplies will require cables to be plugged in both ends</p>
-          <p class="fragment current-visible" style="position:absolute; left:3%; top:20%;"><a href="images/build-gpu-power.jpg"><img src="images/build-gpu-power.jpg" width="75%"/></a></p>
+          <div class="image-float">
+            <a href="images/build-gpu-power.jpg"><img src="images/build-gpu-power.jpg" height="700vh"/></a>
+          </div>
+
+          <div class="content-aside">
+            <p class="fragment">A graphics card may need no extra power,<br/>or a combination of 6/8 pin connectors</p>
+            <p class="fragment">If a port requires 8-pins, plug in an 8-pin connector!</p>
+            <p class="fragment">Modular power supplies require cables to be plugged in both ends</p>
+          </div>
 
         </section>
 
         <section id="session3-build-finishing-up">
           <h2>Step 13: Finishing Up and Cable Management</h2>
 
-          <p class="fragment">Install any other cards or peripherals (for example, wireless)</p>
-          <p class="fragment">Do some cable management to neaten up the cables</p>
-          <p class="fragment current-visible" style="position:absolute; left:0%; top:25%;"><a href="images/build-finished.jpg"><img src="images/build-finished.jpg" width="75%"/></a></p>
+          <div class="image-float">
+            <a href="images/build-finished.jpg"><img src="images/build-finished.jpg" height="700vh"/></a></p>
+          </div>
+
+          <div class="content-aside">
+            <p class="fragment">Install any other cards or peripherals (for example, wireless)</p>
+            <p class="fragment">Do some cable management to neaten up the cables</p>
+          </div>
         </section>
       
         <section id="session3-end">
@@ -1059,8 +1104,8 @@
         <section id="session5-completing">
           <h2>Completing the Build</h2>
 
-          <p>Continue putting the machine together.</p>
-          <p>Refer to the steps in the <a href="#/session3-build-prep-case">previous section</a> if needed..</p>
+          <p>Continue putting the machine together</p>
+          <p>Refer to the steps in the <a href="#/session3-build-prep-case">previous section</a> if needed</p>
           <p>A few video resources on how to put a computer together:</p>
           <blockquote>
             <ul>
@@ -1203,7 +1248,18 @@
 
           <ul>
             <li>Manufacturer websites (for example, G-Skill have compatibility lists for their RAM)</li>
-            <li>Review sites (<a href="http://anandtech.com/">Anandtech</a>, <a href="http://www.tomshardware.com/">Tom's Hardware</a>, <a href="http://www.jonnyguru.com/">JonnyGuru</a>, <a href="http://www.hardwaresecrets.com/">Hardware Secrets</a>, <a href="http://www.hardocp.com/">HardOCP</a>, <a href="http://www.kitguru.net/">KitGuru</a>, <a href="http://www.pcper.com/">PC Perspective</a>, <a href="http://www.guru3d.com/">Guru3D</a>, RealHardTechX <a href="http://www.realhardtechx.com/index_archivos/PSUReviewDatabase.html">PSU review database</a>)
+            <li>Review sites:
+              <ul>
+                <li><a href="http://anandtech.com/">Anandtech</a></li>
+                <li><a href="http://www.tomshardware.com/">Tom's Hardware</a></li>
+                <li><a href="http://www.jonnyguru.com/">JonnyGuru</a></li>
+                <li><a href="http://www.hardwaresecrets.com/">Hardware Secrets</a></li>
+                <li><a href="http://www.hardocp.com/">HardOCP</a></li>
+                <li><a href="http://www.kitguru.net/">KitGuru</a></li>
+                <li><a href="http://www.pcper.com/">PC Perspective</a></li>
+                <li><a href="http://www.guru3d.com/">Guru3D</a></li>
+                <li>RealHardTechX <a href="http://www.realhardtechx.com/index_archivos/PSUReviewDatabase.html">PSU review database</a></li>
+              </ul>
             <li>PC Part Picker shows compatibility, but not foolproof</li>
           </ul>
         </section>
@@ -1273,8 +1329,8 @@
           { src: 'reveal.js/plugin/notes/notes.js', async: true }
         ],
 
-        width: '100%',
-        height: '100%',
+        width: 1920,
+        height: 1080,
       });
 
     </script>
