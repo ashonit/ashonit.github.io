@@ -1,6 +1,11 @@
 /* Presentation CSS overrides */
 
 /* My overrides for the presentation itself */
+.reveal
+{
+  color: #ddd;
+}
+
 .reveal blockquote
 {
   background: rgba(30,30,30,0.5);
@@ -12,6 +17,9 @@
 .image-float
 {
   float: left;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .reveal .content-aside
@@ -37,10 +45,23 @@
   padding: 2em;
 }
 
-.reveal .highlight
-{
-  color: #ff0;
+.reveal .highlight {
+  color: #ff0 !important;
 }
+
+.reveal .slides section .fragment.fade-down {
+  opacity: 1;
+  visibility: visible;
+}
+.reveal .slides section .fragment.fade-down.visible,
+.reveal .slides section .fragment.visible:not(.current-fragment) {
+  color: #bbb;
+}
+.reveal .slides section .fragment.fade-down,
+.reveal .slides section .fragment.current-fragment {
+  color: #fff;
+}
+
 
 /* Overrides for the reveal.js-menu plugin */
 .reveal .slide-menu {
