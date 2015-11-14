@@ -8,7 +8,7 @@
     <meta name="description"
       content="A guide to speccing, sourcing and building your own computer">
     <meta name="author" content="Ashley Arnold">
-    <meta name="version" content="0.4">
+    <meta name="version" content="0.5">
     <meta name="licence" content="GPLv3">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -136,6 +136,8 @@
                 <li>General/office</li>
                 <li>Video or photo editing</li>
                 <li>Gaming</li>
+                <li>Networked storage (NAS)</li>
+                <li>Virtualisation</li>
               </ul>
             </li>
             <li class="fragment">Space</li>
@@ -159,7 +161,7 @@
             </thead>
             <tbody>
               <tr>
-                <td>Usage</td>
+                <td>Usage/Performance</td>
                 <td>Budget</td>
               </tr>
               <tr>
@@ -247,6 +249,7 @@
               <li><a href="#/session1-component-case">Case</a></li>
               <li><a href="#/session1-component-cooling">Cooling</a></li>
               <li><a href="#/session1-component-wireless">Wireless</a></li>
+              <li><a href="#/session1-component-expansion">Other Expansion Cards</a></li>
               <li><a href="#/session1-component-peripherals">Peripherals (keyboard, mouse, monitor, speakers)</a></li>
             </ul>
 
@@ -290,7 +293,7 @@
               <p class="fragment">Must be paired with a CPU that matches the socket</p>
               <p class="fragment">Socket 1151 motherboards are for current Intel CPUs</p>
               <p class="fragment">AMD motherboards are AM3+ ("FX" series) or FM2+ ("APU" series)</p>
-              <p class="fragment">Various brands available, such as Asus, Gigabyte, Asrock, MSI</p>
+              <p class="fragment">Various brands available, such as Asus, Gigabyte, ASRock, MSI</p>
             </div>
           </section>
 
@@ -440,6 +443,21 @@
 
           </section>
 
+          <section id="session1-component-expansion">
+            <h2>Other Expansion Cards</h2>
+
+            <p class="fragment" data-fragment-index="1">In addition to wireless, many other types of expansion cards exist</p>
+            <p class="fragment" data-fragment-index="2">PCIe or USB are most common, PCI getting less common</p>
+            <p class="fragment" data-fragment-index="3">Some of the possible expansion cards are:</p>
+            <ul class="fragment" data-fragment-index="3">
+              <li>TV tuner</li>
+              <li>Sound card</li>
+              <li>RAID</li>
+              <li>Extra network port(s)</li>
+              <li>Video capture</li>
+            </ul>
+          </section>
+
           <section id="session1-component-peripherals">
             <h2>Peripherals (keyboard, mouse, monitor...)</h2>
 
@@ -557,8 +575,8 @@
               <tr><th>Part</th><th>Compatible with</th><th>To Check...</th></tr>
             </thead>
             <tbody>
-              <tr><td>CPU</td><td>Motherboard</td><td>Sockets match (eg 1150 for Intel, AM3+ for AMD)<br/>Motherboard BIOS recent enough for CPU (check motherboard compatibility list)</td></tr>
-              <tr><td>RAM</td><td>Motherboard</td><td>RAM type matches (DDR3 vs DDR4)<br/>Voltage is a match (usually 1.5V unless overclocking)<br/>RAM frequency is supported (currently 1600MHz is "standard")<br/>Check motherboard and/or RAM compatibility list</td></tr>
+              <tr><td>CPU</td><td>Motherboard</td><td>Sockets match (eg 1151 for Intel, AM3+ for AMD)<br/>Motherboard BIOS recent enough for CPU (check motherboard compatibility list)</td></tr>
+              <tr><td>RAM</td><td>Motherboard</td><td>RAM type matches (DDR3 vs DDR4)<br/>Voltage is a match &mdash; usually 1.5V (DDR3) or 1.2V (DDR4) unless overclocking<br/>RAM frequency is supported &mdash; 1600MHz (DDR3) or 2133MHz (DDR4) is "standard"<br/>Check motherboard and/or RAM compatibility list</td></tr>
               <tr><td>Motherboard</td><td>External devices</td><td>Make sure there are enough ports to run all your external devices (usually, USB port count)</td></tr>
               <tr><td>Motherboard</td><td>Case</td><td>Make sure the motherboard has the right connectors for the case &mdash; usually this is headers for USB 3 ports and fans in the case<br/>Make sure the motherboard form factor (ATX, mATX, mITX) has case support (check case specs)</td></tr>
             </tbody>
@@ -574,6 +592,7 @@
             </thead>
             <tbody>
               <tr><td>CPU Cooler</td><td>Motherboard/CPU</td><td>Confirm cooler supports the CPU/motherboard socket type</td></tr>
+              <tr><td>CPU Cooler</td><td>RAM</td><td>Check RAM height won't get in the way of the cooler</td></tr>
               <tr><td>Case</td><td>CPU Cooler</td><td>Make sure the case has enough clearance to fit the cooler</td></tr>
               <tr><td>Case</td><td>GPU</td><td>Make sure the case clearance allows for the length of the GPU</td></tr>
               <tr><td>Case</td><td>PSU</td><td>Make sure the case clearance will fit the PSU; usually only an issue with small form factor and ITX cases</td></tr>
@@ -595,6 +614,7 @@
               <tr><td>PSU</td><td>HDD/SSD/DVD</td><td>Make sure the PSU has enough SATA power connectors for all your drives</td></tr>
               <tr><td>PSU</td><td>All parts</td><td>Make sure the PSU has enough power to support all parts (see <a href="#/session2-estimatingpower">Estimating Power</a>)</td></tr>
               <tr><td>Interal cards</td><td>Motherboard</td><td>If you have internal cards (eg wireless), make sure the motherboard has a slot; PCIe and PCI are different and incompatible; most GPUs take up two slots</td></tr>
+              <tr><td>GPU</td><td>Motherboard</td><td>Large GPUs will occlude ports on some motherboards (example: ASRock H81M-HDS)</td></tr>
               <tr><td>Monitor</td><td>Motherboard/GPU</td><td>Check that video outputs from motherboard or graphics card match inputs on monitor</td></tr>
               <tr><td>CPU</td><td>Motherboard</td><td>If not getting a dedicated graphics card, ensure that both CPU and motherboard support onboard graphics</td></tr>
             </tbody>
@@ -685,14 +705,14 @@
           <h2>Example Parts List</h2>
 
           <ul>
-            <li>CPU: <b>AMD FX-8320</b> ($200)</li>
-            <li>Motherboard: <b>ASUS M5A97 R2.0</b> ($130)</li>
-            <li>Cooler: <b>Coolermaster Hyper 212X</b> ($40)</li>
-            <li>RAM: <b>G-Skill Ares 2x4GB</b> ($90)</li>
+            <li>CPU: <b>AMD FX-8320</b> ($220)</li>
+            <li>Motherboard: <b>ASUS M5A97 R2.0</b> ($140)</li>
+            <li>Cooler: <b>Coolermaster Hyper 212X</b> ($50)</li>
+            <li>RAM: <b>G-Skill Sniper 2x4GB</b> ($70)</li>
             <li>SSD: <b>Crucial BX-100 250GB</b> ($130)</li>
             <li>HDD: <b>WD Blue 1TB</b> ($70)</li>
             <li>ODD: <b>LiteOn DVD-RW</b> ($20)</li>
-            <li>GPU: <b>MSI R9 280 3GB</b> ($250)</li>
+            <li>GPU: <b>Sapphire R9 380 2GB</b> ($290)</li>
             <li>Case: <b>Fractal Design Core 2500</b> ($90)</li>
             <li>PSU: <b>Antec HCG-520M</b> ($100)</li>
             <li>Wifi: <b>D-Link DWA-548</b> ($20)</li>
@@ -714,7 +734,7 @@
             <li>ODD: <span class="fragment strike" data-fragment-index="3">LiteOn DVD-RW ($20)</span></li>
             <li>GPU: <span class="fragment strike" data-fragment-index="4">MSI R9 380 4GB ($300)</span></li>
             <li>Case: <span class="fragment strike" data-fragment-index="5">Fractal Design Core 2500 ($80)</span> <span class="fragment highlight" data-fragment-index="5"><b>Deepcool Tesseract</b></span></li>
-            <li>PSU:  <span class="fragment strike" data-fragment-index="6">FAntec HCG-520M ($100)</span> <span class="fragment highlight" data-fragment-index="6"><b>EVGA 80+ 430W</b></span></li>
+            <li>PSU:  <span class="fragment strike" data-fragment-index="6">Antec HCG-520M ($100)</span> <span class="fragment highlight" data-fragment-index="6"><b>EVGA 80+ 430W</b></span></li>
             <li>Wifi:  <span class="fragment strike" data-fragment-index="7">D-Link DWA-548 ($20)</span></li>
           </ul>
           <p class="fragment" data-fragment-index="8">Reduces total cost from about $1200 to about $550</p>
@@ -812,7 +832,7 @@
           <section id="session3-preparation">
             <h2>Preparing to Build</h2>
   
-            <p class="fragment">Tools &mdash; screwdriver, snips, cable ties</p>
+            <p class="fragment">Tools &mdash; screwdriver! (Also useful: snips, cable ties)</p>
             <p class="fragment">Work area &mdash; wooden bench top; uncarpeted floor; cotton clothes</p>
             <p class="fragment">Reducing static</p>
             <p class="fragment">Tip: Another internet connected device</p>
@@ -839,6 +859,7 @@
 
           <div class="content-aside">
             <p class="fragment">Open up the case, ensure screws and other parts are included</p>
+            <p class="fragment">If you purchased a separate power supply, needs to be installed</p>
             <p class="fragment">Take out the power supply and insert in the appropriate place</p>
             <p class="fragment">Most cases have the power supply slot at the bottom of the case</p>
             <p class="fragment">Standard is to put the PSU fan down (whether at the bottom or the top of the case)</p>
@@ -851,7 +872,7 @@
 
           <div class="image-float">
               <p style="position: relative; left: 0; top: 0;"><a href="images/build-shield-1.jpg"><img src="images/build-shield-1.jpg" height="700vh"/></a></p>
-              <p class="fragment" data-fragment-index="4" style="position:absolute; left:20px; top:20px;"><a href="images/build-shield-2.jpg"><img src="images/build-shield-2.jpg" height="700vh"/></a></p>
+              <p class="fragment" data-fragment-index="5" style="position:absolute; left:20px; top:20px;"><a href="images/build-shield-2.jpg"><img src="images/build-shield-2.jpg" height="700vh"/></a></p>
           </div>
 
           <div class="content-aside">
@@ -860,6 +881,7 @@
             <p class="fragment" data-fragment-index="2">Later when installing the motherboard,<br/>it will guide the back I/O panel placement</p>
             <p class="fragment" data-fragment-index="3">The size is standardised &mdash;<br/>all cases will support any
               motherboard's shield</p>
+            <p class="fragment" data-fragment-index="4">...almost (for example, see "Thin" ITX motherboards)</p>
           </div>
         </section>
 
@@ -895,6 +917,8 @@
           <div class="content-aside">
             <p class="fragment fade-down" data-fragment-index="1">CPU alignment</p>
             <p class="fragment" data-fragment-index="1">Remove the plastic tab from the CPU socket on the motherboard</p>
+            <p class="fragment" data-fragment-index="3">On Intel motherboards, check for <a href="http://i1328.photobucket.com/albums/w524/Aggie1295/CPUSocketPicture2_zpsdfba82f9.jpg">bent or broken pins</a></p>
+            <p class="fragment" data-fragment-index="3">The CPU and motherboard both have an arrow to align</p>
             <p class="fragment" data-fragment-index="3">Should drop right into place without any force</p>
             <p class="fragment" data-fragment-index="5">The lever to hold the CPU in place can make the board creak</p>
             <p class="fragment" data-fragment-index="6">Be careful not to bend any pins!</p>
@@ -1015,7 +1039,8 @@
           </div>
 
           <div class="content-aside">
-            <p class="fragment">Graphics cards should go in the main (long) PCIe slot</p>
+            <p class="fragment">Graphics cards usually go in the main (long) PCIe slot</p>
+            <p class="fragment">Check motherboard specs for the most appropriate slot</p>
             <p class="fragment">Remove the braces from the side of the case</p>
             <p class="fragment">Clicks into place with a latch</p>
           </div>
@@ -1127,7 +1152,7 @@
         </section>
 
         <section id="session5-troubleshooting">
-          <h2>Troubleshooting</h2>
+          <h2>Troubleshooting (what to do when things don't work)</h2>
 
           <p class="fragment">If the machine doesn't boot, track down the problems based on symptoms</p>
           <table class="fragment">
@@ -1265,7 +1290,7 @@
         </section>
  
         <section id="appendix-help">
-          <h2>Troubleshooting and Help:</h2>
+          <h2>Troubleshooting and Help</h2>
 
           <ul>
             <li>Forums (<a href="https://forums.whirlpool.net.au">Whirlpool</a>, <a href="http://forums.overclockers.com.au/">OCAU</a>, Reddit <a href="https://www.reddit.com/r/buildapc">/r/buildapc</a>)</li>
