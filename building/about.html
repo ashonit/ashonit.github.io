@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>About the "How to Build a Computer" Course</title> 
+    <meta name="description"
+      content="A guide to speccing, sourcing and building your own computer">
+    <meta name="author" content="Ashley Arnold">
+    <meta name="licence" content="GPLv3">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/night.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+    <!-- Overrides to default reveal.js styles -->
+    <link rel="stylesheet" href="css/override.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+  </head>
+
+  <body>
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section id="course-overview" data-background="images/build-finished.jpg">
+          <div class="title-div">
+            <h2>"How to Build a Computer"<br/>Course Overview</h2>
+            <p>Ever wanted to learn how to build your own PC?<br/>
+            Or even just get a better idea of what all the parts<br/>
+            are inside and how they fit together, in order to perform</br>
+            basic maintenance or upgrades?</p>
+
+            <p>Starting with the core parts in a modern computer<br/>
+            and how to choose them to meet your budget, we go<br/>
+            right through to putting it together, testing and<br/>
+            software installation.</p>
+
+            <p>Building your own computer is a satisfying experience &mdash;<br/>
+            not to mention fun.</p>
+
+            <p><i>The course can cater for up to 10 people. It is broken<br/>
+            into 6 sessions of approximately 1 &ndash; 1.5 hours each.</i></p>
+
+            <p>&nbsp;</p>
+            <p><a href="index.html">Begin</a></p>
+          </div>
+        </section>
+
+        <section id="course-key-points" data-background="images/build-finished.jpg">
+          <div class="title-div">
+            <h2>Key Points</h2>
+
+            <p>6 sessions, 1 &ndash; 1.5 hours each</p>
+            <p>Targeted at beginners to intermediate,<br/>
+            but can cater for advanced users</p>
+            <p>Room requirements:</p>
+            <ul>
+              <li>Presentation PC and Projector</li>
+              <li>Computer for each student with internet connection</br>
+              to use for reference if needed</li>
+              <li>Desks with at least 1x1m of work space</li>
+              <li>Spare power points</li>
+            </ul>
+            <p>Contact: <a href="mailto:ashonit@gmail.com">Ash</a></p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        slideNumber: 'h',
+
+        menu: {
+          side: 'right',
+          markers: true,
+          openSlideNumber: true,
+
+          themes: [
+            { name: 'Black', theme: 'reveal.js/css/theme/black.css' },
+            { name: 'White', theme: 'reveal.js/css/theme/white.css' },
+            { name: 'League', theme: 'reveal.js/css/theme/league.css' },
+            { name: 'Sky', theme: 'reveal.js/css/theme/sky.css' },
+            { name: 'Beige', theme: 'reveal.js/css/theme/beige.css' },
+            { name: 'Simple', theme: 'reveal.js/css/theme/simple.css' },
+            { name: 'Serif', theme: 'reveal.js/css/theme/serif.css' },
+            { name: 'Blood', theme: 'reveal.js/css/theme/blood.css' },
+            { name: 'Night', theme: 'reveal.js/css/theme/night.css' },
+            { name: 'Moon', theme: 'reveal.js/css/theme/moon.css' },
+            { name: 'Solarized', theme: 'reveal.js/css/theme/solarized.css' }
+          ],
+
+          custom: [
+            { title: 'Links', icon: '<i class="fa fa-info">', src: 'links.html' },
+          ]
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js-menu/menu.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ],
+
+        width: 1280,
+        height: 1024,
+      });
+
+    </script>
+  </body>
+</html>
